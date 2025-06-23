@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cristal Star - التطبيق</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1 class="logo">CS</h1>
+  <h2>تطبيق Cristal Star</h2>
+</header>
+
+<main>
+  <section id="playersSection">
+    <h2>قائمة اللاعبين ونقاطهم</h2>
+    <table id="playersTable">
+      <thead>
+        <tr><th>اسم اللاعب</th><th>النقاط</th><th>الإجراءات</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <input type="text" id="newPlayerName" placeholder="اسم لاعب جديد" />
+    <button onclick="addPlayer()">إضافة لاعب</button>
+  </section>
+<section id="storeSection">
+    <h2>المتجر</h2>
+    <div id="storeItems"></div>
+    <input type="text" id="newItemName" placeholder="اسم العنصر" />
+    <input type="number" id="newItemPrice" placeholder="سعر العنصر" />
+    <button onclick="addItem()">إضافة عنصر</button>
+  </section>
+
+  <section id="messagesSection">
+    <h2>المراسلات</h2>
+    <select id="messageRecipient"></select><br/>
+    <textarea id="newMessage" placeholder="اكتب رسالتك هنا..."></textarea><br/>
+    <button onclick="sendMessage()">إرسال</button>
+    <div id="messagesList"></div>
+  </section>
+
+  <section id="postsSection">
+    <h2>المنشورات</h2>
+    <div id="postsList"></div>
+  <textarea id="newPostText" placeholder="نص المنشور"></textarea><br/>
+    <input type="color" id="newPostColor" value="#003366" />
+    <input type="text" id="newPostImg" placeholder="رابط صورة (اختياري)" />
+    <button onclick="addPost()">إضافة منشور</button>
+  </section>
+</main>
+
+<footer>
+  <p>© Cristal Star 2025</p>
+</footer>
+
+<script src="data.js"></script>
+</body>
+</html>
