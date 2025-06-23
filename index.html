@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cristal Star - تسجيل الدخول</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>تسجيل الدخول</h1>
+    <input type="password" id="passwordInput" placeholder="أدخل الرمز السري" />
+    <button onclick="checkPassword()">دخول</button>
+    <p class="error" id="errorMsg" style="display:none;">الرمز خاطئ، حاول مرة أخرى.</p>
+  </div>
+<script>
+  function checkPassword() {
+    const password = document.getElementById('passwordInput').value;
+    const correctPassword = 'dfg';
+    if(password === correctPassword) {
+      window.location.href = 'main.html';
+    } else {
+      document.getElementById('errorMsg').style.display = 'block';
+    }
+  }
+</script>
+</body>
+</html>
