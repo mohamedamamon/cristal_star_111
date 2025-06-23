@@ -1,0 +1,94 @@
+body {
+  font-family: 'Tahoma', sans-serif;
+  background: #f0f4f8;
+  color: #003366;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+header, footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.logo {
+  font-size: 3em;
+  margin: 0;
+}
+.login-container {
+  max-width: 350px;
+  margin: 100px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #999;
+  text-align: center;
+}
+.login-container input,
+.login-container button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+.login-container button {
+  background: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+main {
+ padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+section {
+  margin-bottom: 40px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+table, th, td {
+  border: 1px solid #003366;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+button {
+  padding: 6px 10px;
+  margin: 2px;
+  background-color: #003366;
+  color: white;
+ border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  padding: 6px;
+  margin: 5px 0;
+  width: calc(100% - 14px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+#storeItems, #messagesList, #postsList {
+  border: 1px solid #ccc;
+  min-height: 60px;
+  padding: 10px;
+  background: #e9f1ff;
+  border-radius: 6px;
+  max-height: 200px;
+ overflow-y: auto;
+}
